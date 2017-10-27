@@ -1,0 +1,152 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Xbim.Common\Attributes.cs" Link="Attributes.cs" />
+    <Compile Include="..\Xbim.Common\Collections\ExtendedItemSet.cs" Link="Collections\ExtendedItemSet.cs" />
+    <Compile Include="..\Xbim.Common\Collections\ExtendedSingleSet.cs" Link="Collections\ExtendedSingleSet.cs" />
+    <Compile Include="..\Xbim.Common\Collections\ItemSet.cs" Link="Collections\ItemSet.cs" />
+    <Compile Include="..\Xbim.Common\Collections\MultiValueDictionary.cs" Link="Collections\MultiValueDictionary.cs" />
+    <Compile Include="..\Xbim.Common\Collections\ProxyItemSet.cs" Link="Collections\ProxyItemSet.cs" />
+    <Compile Include="..\Xbim.Common\Collections\ProxyNestedItemSet.cs" Link="Collections\ProxyNestedItemSet.cs" />
+    <Compile Include="..\Xbim.Common\Collections\ProxyValueSet.cs" Link="Collections\ProxyValueSet.cs" />
+    <Compile Include="..\Xbim.Common\Collections\ReverseProxyItemSet.cs" Link="Collections\ReverseProxyItemSet.cs" />
+    <Compile Include="..\Xbim.Common\Collections\VolatileProxyItemSet.cs" Link="Collections\VolatileProxyItemSet.cs" />
+    <Compile Include="..\Xbim.Common\Enumerations\ValidationFlags.cs" Link="Enumerations\ValidationFlags.cs" />
+    <Compile Include="..\Xbim.Common\Enumerations\XbimRepresentationType.cs" Link="Enumerations\XbimRepresentationType.cs" />
+    <Compile Include="..\Xbim.Common\Exceptions\ExceptionExtensions.cs" Link="Exceptions\ExceptionExtensions.cs" />
+    <Compile Include="..\Xbim.Common\Exceptions\XbimException.cs" Link="Exceptions\XbimException.cs" />
+    <Compile Include="..\Xbim.Common\Exceptions\XbimGeometryException.cs" Link="Exceptions\XbimGeometryException.cs" />
+    <Compile Include="..\Xbim.Common\Exceptions\XbimInitializationFailedException.cs" Link="Exceptions\XbimInitializationFailedException.cs" />
+    <Compile Include="..\Xbim.Common\Exceptions\XbimParserException.cs" Link="Exceptions\XbimParserException.cs" />
+    <Compile Include="..\Xbim.Common\ExpressInterfaces.cs" Link="ExpressInterfaces.cs" />
+    <Compile Include="..\Xbim.Common\ExpressValidation\IExpressValidatable.cs" Link="ExpressValidation\IExpressValidatable.cs" />
+    <Compile Include="..\Xbim.Common\ExpressValidation\ValidationResult.cs" Link="ExpressValidation\ValidationResult.cs" />
+    <Compile Include="..\Xbim.Common\Federation\FederatedModelInstances.cs" Link="Federation\FederatedModelInstances.cs" />
+    <Compile Include="..\Xbim.Common\Federation\IFederatedModel.cs" Link="Federation\IFederatedModel.cs" />
+    <Compile Include="..\Xbim.Common\Federation\IReferencedModel.cs" Link="Federation\IReferencedModel.cs" />
+    <Compile Include="..\Xbim.Common\Federation\ReferencedModelCollection.cs" Link="Federation\ReferencedModelCollection.cs" />
+    <Compile Include="..\Xbim.Common\FlagSetter.cs" Link="FlagSetter.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IGeometryManager.cs" Link="Geometry\IGeometryManager.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IGeometryStore.cs" Link="Geometry\IGeometryStore.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IGeometryStoreInitialiser.cs" Link="Geometry\IGeometryStoreInitialiser.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IGeometryStoreReader.cs" Link="Geometry\IGeometryStoreReader.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IVector3D.cs" Link="Geometry\IVector3D.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimBooleanOperand.cs" Link="Geometry\IXbimBooleanOperand.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimCurve.cs" Link="Geometry\IXbimCurve.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimCurveSet.cs" Link="Geometry\IXbimCurveSet.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimEdge.cs" Link="Geometry\IXbimEdge.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimEdgeSet.cs" Link="Geometry\IXbimEdgeSet.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimFace.cs" Link="Geometry\IXbimFace.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimFaceSet.cs" Link="Geometry\IXbimFaceSet.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimGeometryObject.cs" Link="Geometry\IXbimGeometryObject.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimGeometryObjectSet.cs" Link="Geometry\IXbimGeometryObjectSet.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimMesh.cs" Link="Geometry\IXbimMesh.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimMeshSet.cs" Link="Geometry\IXbimMeshSet.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimOrientedEdge.cs" Link="Geometry\IXbimOrientedEdge.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimPoint.cs" Link="Geometry\IXbimPoint.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimShapeGeometryData.cs" Link="Geometry\IXbimShapeGeometryData.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimShapeInstanceData.cs" Link="Geometry\IXbimShapeInstanceData.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimShell.cs" Link="Geometry\IXbimShell.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimShellSet.cs" Link="Geometry\IXbimShellSet.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimSolid.cs" Link="Geometry\IXbimSolid.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimSolidSet.cs" Link="Geometry\IXbimSolidSet.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimSpatialObject.cs" Link="Geometry\IXbimSpatialObject.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimSurface.cs" Link="Geometry\IXbimSurface.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimTriangulatedFaceSet.cs" Link="Geometry\IXbimTriangulatedFaceSet.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimVertex.cs" Link="Geometry\IXbimVertex.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimVertexSet.cs" Link="Geometry\IXbimVertexSet.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimWire.cs" Link="Geometry\IXbimWire.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\IXbimWireSet.cs" Link="Geometry\IXbimWireSet.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimBBoxClusterElement.cs" Link="Geometry\XbimBBoxClusterElement.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimContextRegionCollection.cs" Link="Geometry\XbimContextRegionCollection.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimDimensionalExponents.cs" Link="Geometry\XbimDimensionalExponents.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimDirectionEnum.cs" Link="Geometry\XbimDirectionEnum.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimFaceTriangulation.cs" Link="Geometry\XbimFaceTriangulation.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimGeometryData.cs" Link="Geometry\XbimGeometryData.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimGeometryObjectType.cs" Link="Geometry\XbimGeometryObjectType.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimGeometryRepresentationType.cs" Link="Geometry\XbimGeometryRepresentationType.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimGeometryType.cs" Link="Geometry\XbimGeometryType.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimLine.cs" Link="Geometry\XbimLine.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimLOD.cs" Link="Geometry\XbimLOD.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimMatrix3D.cs" Link="Geometry\XbimMatrix3D.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimPackedNormal.cs" Link="Geometry\XbimPackedNormal.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimPackedNormalCollection.cs" Link="Geometry\XbimPackedNormalCollection.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimPoint3D.cs" Link="Geometry\XbimPoint3D.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimQuaternion.cs" Link="Geometry\XbimQuaternion.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimRect3D.cs" Link="Geometry\XbimRect3D.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimRegion.cs" Link="Geometry\XbimRegion.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimRegionCollection.cs" Link="Geometry\XbimRegionCollection.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimShapeGeometry.cs" Link="Geometry\XbimShapeGeometry.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimShapeInstance.cs" Link="Geometry\XbimShapeInstance.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimShapeTriangulation.cs" Link="Geometry\XbimShapeTriangulation.cs" />
+    <Compile Include="..\Xbim.Common\Geometry\XbimVector3D.cs" Link="Geometry\XbimVector3D.cs" />
+    <Compile Include="..\Xbim.Common\IContainsEntityReferences.cs" Link="IContainsEntityReferences.cs" />
+    <Compile Include="..\Xbim.Common\IContainsIndexedReference.cs" Link="IContainsIndexedReference.cs" />
+    <Compile Include="..\Xbim.Common\IEntityCollection.cs" Link="IEntityCollection.cs" />
+    <Compile Include="..\Xbim.Common\IEntityFactory.cs" Link="IEntityFactory.cs" />
+    <Compile Include="..\Xbim.Common\IInstantiableEntity.cs" Link="IInstantiableEntity.cs" />
+    <Compile Include="..\Xbim.Common\IInverseCache.cs" Link="IInverseCache.cs" />
+    <Compile Include="..\Xbim.Common\IItemSet.cs" Link="IItemSet.cs" />
+    <Compile Include="..\Xbim.Common\IModel.cs" Link="IModel.cs" />
+    <Compile Include="..\Xbim.Common\IOptionalItemSet.cs" Link="IOptionalItemSet.cs" />
+    <Compile Include="..\Xbim.Common\IPersist.cs" Link="IPersist.cs" />
+    <Compile Include="..\Xbim.Common\IPersistEntity.cs" Link="IPersistEntity.cs" />
+    <Compile Include="..\Xbim.Common\IPersistEntityExtensions.cs" Link="IPersistEntityExtensions.cs" />
+    <Compile Include="..\Xbim.Common\IPropertyValue.cs" Link="IPropertyValue.cs" />
+    <Compile Include="..\Xbim.Common\ITransaction.cs" Link="ITransaction.cs" />
+    <Compile Include="..\Xbim.Common\Logging\Event.cs" Link="Logging\Event.cs" />
+    <Compile Include="..\Xbim.Common\Logging\EventLevel.cs" Link="Logging\EventLevel.cs" />
+    <Compile Include="..\Xbim.Common\Logging\EventTrace.cs" Link="Logging\EventTrace.cs" />
+    <Compile Include="..\Xbim.Common\Logging\ILogger.cs" Link="Logging\ILogger.cs" />
+    <Compile Include="..\Xbim.Common\Logging\LoggerFactory.cs" Link="Logging\LoggerFactory.cs" />
+    <Compile Include="..\Xbim.Common\Logging\Providers\AttributeHelper.cs" Link="Logging\Providers\AttributeHelper.cs" />
+    <Compile Include="..\Xbim.Common\Logging\Providers\DefaultLogger.cs" Link="Logging\Providers\DefaultLogger.cs" />
+    <Compile Include="..\Xbim.Common\Logging\Providers\DefaultProvider.cs" Link="Logging\Providers\DefaultProvider.cs" />
+    <Compile Include="..\Xbim.Common\Logging\Providers\ILoggingProvider.cs" Link="Logging\Providers\ILoggingProvider.cs" />
+    <Compile Include="..\Xbim.Common\Logging\Providers\Log4NetLogger.cs" Link="Logging\Providers\Log4NetLogger.cs" />
+    <Compile Include="..\Xbim.Common\Logging\Providers\Log4NetProvider.cs" Link="Logging\Providers\Log4NetProvider.cs" />
+    <Compile Include="..\Xbim.Common\Metadata\ExpressMetaData.cs" Link="Metadata\ExpressMetaData.cs" />
+    <Compile Include="..\Xbim.Common\Metadata\ExpressType.cs" Link="Metadata\ExpressType.cs" />
+    <Compile Include="..\Xbim.Common\Metadata\ExpressTypeDictionary.cs" Link="Metadata\ExpressTypeDictionary.cs" />
+    <Compile Include="..\Xbim.Common\PersistEntity.cs" Link="PersistEntity.cs" />
+    <Compile Include="..\Xbim.Common\PlaceboTransaction.cs" Link="PlaceboTransaction.cs" />
+    <Compile Include="..\Xbim.Common\ProjectUnits.cs" Link="ProjectUnits.cs" />
+    <Compile Include="..\Xbim.Common\ReportProgressDelegate.cs" Link="ReportProgressDelegate.cs" />
+    <Compile Include="..\Xbim.Common\Step21\IfcSchemaVersion.cs" Link="Step21\IfcSchemaVersion.cs" />
+    <Compile Include="..\Xbim.Common\Step21\IStepFileDescription.cs" Link="Step21\IStepFileDescription.cs" />
+    <Compile Include="..\Xbim.Common\Step21\IStepFileHeader.cs" Link="Step21\IStepFileHeader.cs" />
+    <Compile Include="..\Xbim.Common\Step21\IStepFileName.cs" Link="Step21\IStepFileName.cs" />
+    <Compile Include="..\Xbim.Common\Step21\IStepFileSchema.cs" Link="Step21\IStepFileSchema.cs" />
+    <Compile Include="..\Xbim.Common\Step21\StepFileHeader.cs" Link="Step21\StepFileHeader.cs" />
+    <Compile Include="..\Xbim.Common\Step21\StepParserType.cs" Link="Step21\StepParserType.cs" />
+    <Compile Include="..\Xbim.Common\XbimAssemblyInfo.cs" Link="XbimAssemblyInfo.cs" />
+    <Compile Include="..\Xbim.Common\XbimExtensions\BinaryReaderExtensions.cs" Link="XbimExtensions\BinaryReaderExtensions.cs" />
+    <Compile Include="..\Xbim.Common\XbimExtensions\IEnumerableExtensions.cs" Link="XbimExtensions\IEnumerableExtensions.cs" />
+    <Compile Include="..\Xbim.Common\XbimExtensions\StringExtensions.cs" Link="XbimExtensions\StringExtensions.cs" />
+    <Compile Include="..\Xbim.Common\XbimExtensions\XbimTriplet.cs" Link="XbimExtensions\XbimTriplet.cs" />
+    <Compile Include="..\Xbim.Common\XbimInstanceHandle.cs" Link="XbimInstanceHandle.cs" />
+    <Compile Include="..\Xbim.Common\XbimInstanceHandleMap.cs" Link="XbimInstanceHandleMap.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Collections\" />
+    <Folder Include="Enumerations\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="ExpressValidation\" />
+    <Folder Include="Federation\" />
+    <Folder Include="Geometry\" />
+    <Folder Include="Logging\Providers\" />
+    <Folder Include="Metadata\" />
+    <Folder Include="Step21\" />
+    <Folder Include="XbimExtensions\" />
+  </ItemGroup>
+
+</Project>
