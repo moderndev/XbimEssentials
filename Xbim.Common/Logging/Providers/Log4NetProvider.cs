@@ -19,6 +19,7 @@ using log4net.Config;
 using log4net.Core;
 using log4net.Layout;
 using log4net.Repository.Hierarchy;
+using log4net.Repository;
 
 namespace Xbim.Common.Logging.Providers
 {
@@ -29,7 +30,7 @@ namespace Xbim.Common.Logging.Providers
 	/// <remarks>See http://logging.apache.org/log4net/release/manual/introduction.html for more on log4net logging.</remarks>
 	internal class Log4NetProvider : ILoggingProvider
 	{
-
+        ILoggerRepository _respository;
 		#region ILoggingProvider Members
 
 		/// <summary>
@@ -46,11 +47,12 @@ namespace Xbim.Common.Logging.Providers
                 log4net.GlobalContext.Properties["LogName"] = Path.Combine(LogPath, LogFileName);
                 log4net.GlobalContext.Properties["ApplicationName"] = ApplicationName;
             }
-
-            if (!log4net.LogManager.GetRepository().Configured)
+            var repoName = log4net.GlobalContext.Properties["LogName"].ToString();
+            _respository = log4net.LogManager.GetRepository(repoName);
+            if (!_respository.Configured)
             {
                 // Don't call configure if the calling application has already configured
-                XmlConfigurator.Configure();
+                XmlConfigurator.Configure(_respository);
             }
 
 		}
@@ -228,9 +230,9 @@ namespace Xbim.Common.Logging.Providers
         {
             get
             {
-                if (_hierarchy == null)
+                if (_hierarchy == null && _respository != null)
                 {
-                    _hierarchy = LogManager.GetRepository() as Hierarchy;
+                    _hierarchy = _respository as Hierarchy;
                 }
                 return _hierarchy;
             }
