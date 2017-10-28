@@ -64,7 +64,6 @@
     <Compile Include="..\Xbim.IO\StringExtensions.cs" Link="StringExtensions.cs" />
     <Compile Include="..\Xbim.IO\TypeExtensions.cs" Link="TypeExtensions.cs" />
     <Compile Include="..\Xbim.IO\XbimGeometrySort.cs" Link="XbimGeometrySort.cs" />
-    <Compile Include="..\Xbim.IO\Xml\BsConf\cnf.custom.cs" Link="Xml\BsConf\cnf.custom.cs" />
     <Compile Include="..\Xbim.IO\Xml\BsConf\cnf.designer.cs" Link="Xml\BsConf\cnf.designer.cs" />
     <Compile Include="..\Xbim.IO\Xml\IfcXmlReader.cs" Link="Xml\IfcXmlReader.cs" />
     <Compile Include="..\Xbim.IO\Xml\IfcXmlWriter3.cs" Link="Xml\IfcXmlWriter3.cs" />
@@ -83,7 +82,6 @@
   <ItemGroup>
     <Folder Include="Binary\" />
     <Folder Include="Delta\" />
-    <Folder Include="Esent\" />
     <Folder Include="JSON\" />
     <Folder Include="Memory\" />
   </ItemGroup>
@@ -92,10 +90,26 @@
     <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="ManagedEsent" Version="1.9.4" />
     <PackageReference Include="SharpZipLib" Version="0.86.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Xbim.Common.Standard\Xbim.Common.Standard.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

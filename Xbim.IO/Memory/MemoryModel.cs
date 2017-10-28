@@ -18,7 +18,7 @@ namespace Xbim.IO.Memory
 {
     public class MemoryModel : IModel, IDisposable
     {
-        private static readonly ILog Log = LogManager.GetLogger("Xbim.IO.Memory.MemoryModel");
+        private static readonly ILog Log = LogManager.GetLogger(typeof(MemoryModel));
 
         private static ZipEntry GetZipEntry(Stream fileStream)
         {
