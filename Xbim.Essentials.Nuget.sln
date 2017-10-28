@@ -66,6 +66,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profiling.InverseCacheImpac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbim.Common.Standard", "Xbim.Common.Standard\Xbim.Common.Standard.csproj", "{AC74480D-8AEA-455C-AC2E-EBDD67645A48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbim.IO.Standard", "Xbim.IO.Standard\Xbim.IO.Standard.csproj", "{B144DC10-DEE8-4A7B-9646-0FAA8EA51A87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -160,6 +162,10 @@ Global
 		{AC74480D-8AEA-455C-AC2E-EBDD67645A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC74480D-8AEA-455C-AC2E-EBDD67645A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC74480D-8AEA-455C-AC2E-EBDD67645A48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B144DC10-DEE8-4A7B-9646-0FAA8EA51A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B144DC10-DEE8-4A7B-9646-0FAA8EA51A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B144DC10-DEE8-4A7B-9646-0FAA8EA51A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B144DC10-DEE8-4A7B-9646-0FAA8EA51A87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,101 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Xbim.IO\Binary\XbimInputStream.cs" Link="Binary\XbimInputStream.cs" />
+    <Compile Include="..\Xbim.IO\Binary\XbimOutputStream.cs" Link="Binary\XbimOutputStream.cs" />
+    <Compile Include="..\Xbim.IO\Binary\XbimPackage.cs" Link="Binary\XbimPackage.cs" />
+    <Compile Include="..\Xbim.IO\Delta\TransactionLog.cs" Link="Delta\TransactionLog.cs" />
+    <Compile Include="..\Xbim.IO\Esent\EsentCursor.cs" Link="Esent\EsentCursor.cs" />
+    <Compile Include="..\Xbim.IO\Esent\EsentEntityCursor.cs" Link="Esent\EsentEntityCursor.cs" />
+    <Compile Include="..\Xbim.IO\Esent\EsentGeometryInitialiser.cs" Link="Esent\EsentGeometryInitialiser.cs" />
+    <Compile Include="..\Xbim.IO\Esent\EsentGeometryStore.cs" Link="Esent\EsentGeometryStore.cs" />
+    <Compile Include="..\Xbim.IO\Esent\EsentGeometryStoreReader.cs" Link="Esent\EsentGeometryStoreReader.cs" />
+    <Compile Include="..\Xbim.IO\Esent\EsentLazyDBTransaction.cs" Link="Esent\EsentLazyDBTransaction.cs" />
+    <Compile Include="..\Xbim.IO\Esent\EsentModel.cs" Link="Esent\EsentModel.cs" />
+    <Compile Include="..\Xbim.IO\Esent\EsentReadOnlyTransaction.cs" Link="Esent\EsentReadOnlyTransaction.cs" />
+    <Compile Include="..\Xbim.IO\Esent\EsentShapeGeometryCursor.cs" Link="Esent\EsentShapeGeometryCursor.cs" />
+    <Compile Include="..\Xbim.IO\Esent\EsentShapeInstanceCursor.cs" Link="Esent\EsentShapeInstanceCursor.cs" />
+    <Compile Include="..\Xbim.IO\Esent\PersistedEntityInstanceCache.cs" Link="Esent\PersistedEntityInstanceCache.cs" />
+    <Compile Include="..\Xbim.IO\Esent\XbimDBAccess.cs" Link="Esent\XbimDBAccess.cs" />
+    <Compile Include="..\Xbim.IO\Esent\XbimGeometryCursor.cs" Link="Esent\XbimGeometryCursor.cs" />
+    <Compile Include="..\Xbim.IO\Esent\XbimGeometryHandle.cs" Link="Esent\XbimGeometryHandle.cs" />
+    <Compile Include="..\Xbim.IO\Esent\XbimGeometryHandleCollection.cs" Link="Esent\XbimGeometryHandleCollection.cs" />
+    <Compile Include="..\Xbim.IO\Esent\XbimInstanceCollection.cs" Link="Esent\XbimInstanceCollection.cs" />
+    <Compile Include="..\Xbim.IO\Esent\XbimP21Indexer.cs" Link="Esent\XbimP21Indexer.cs" />
+    <Compile Include="..\Xbim.IO\Esent\XbimParserState.cs" Link="Esent\XbimParserState.cs" />
+    <Compile Include="..\Xbim.IO\Esent\XbimReadTransaction.cs" Link="Esent\XbimReadTransaction.cs" />
+    <Compile Include="..\Xbim.IO\Esent\XbimReadWriteTransaction.cs" Link="Esent\XbimReadWriteTransaction.cs" />
+    <Compile Include="..\Xbim.IO\Esent\XbimSurfaceStyle.cs" Link="Esent\XbimSurfaceStyle.cs" />
+    <Compile Include="..\Xbim.IO\Esent\XbimSurfaceStyleMap.cs" Link="Esent\XbimSurfaceStyleMap.cs" />
+    <Compile Include="..\Xbim.IO\FileReferenceResolver.cs" Link="FileReferenceResolver.cs" />
+    <Compile Include="..\Xbim.IO\IfcStorageType.cs" Link="IfcStorageType.cs" />
+    <Compile Include="..\Xbim.IO\IPersistEntityExtensions.cs" Link="IPersistEntityExtensions.cs" />
+    <Compile Include="..\Xbim.IO\JSON\JSONWritter.cs" Link="JSON\JSONWritter.cs" />
+    <Compile Include="..\Xbim.IO\Memory\EntityCollection.cs" Link="Memory\EntityCollection.cs" />
+    <Compile Include="..\Xbim.IO\Memory\InMemoryGeometryStore.cs" Link="Memory\InMemoryGeometryStore.cs" />
+    <Compile Include="..\Xbim.IO\Memory\InMemoryGeometryStoreInitialiser.cs" Link="Memory\InMemoryGeometryStoreInitialiser.cs" />
+    <Compile Include="..\Xbim.IO\Memory\InMemoryGeometryStoreReader.cs" Link="Memory\InMemoryGeometryStoreReader.cs" />
+    <Compile Include="..\Xbim.IO\Memory\MemoryInverseCache.cs" Link="Memory\MemoryInverseCache.cs" />
+    <Compile Include="..\Xbim.IO\Memory\MemoryModel.cs" Link="Memory\MemoryModel.cs" />
+    <Compile Include="..\Xbim.IO\Memory\Transaction.cs" Link="Memory\Transaction.cs" />
+    <Compile Include="..\Xbim.IO\ModelHelper.cs" Link="ModelHelper.cs" />
+    <Compile Include="..\Xbim.IO\PropertyInfoExtensions.cs" Link="PropertyInfoExtensions.cs" />
+    <Compile Include="..\Xbim.IO\Step21\Parser\IndexPropertyValue.cs" Link="Step21\Parser\IndexPropertyValue.cs" />
+    <Compile Include="..\Xbim.IO\Step21\Parser\IStepP21Parser.cs" Link="Step21\Parser\IStepP21Parser.cs" />
+    <Compile Include="..\Xbim.IO\Step21\Parser\Parser.cs" Link="Step21\Parser\Parser.cs" />
+    <Compile Include="..\Xbim.IO\Step21\Parser\PropertyValue.cs" Link="Step21\Parser\PropertyValue.cs" />
+    <Compile Include="..\Xbim.IO\Step21\Parser\ShiftReduceParserCode.cs" Link="Step21\Parser\ShiftReduceParserCode.cs" />
+    <Compile Include="..\Xbim.IO\Step21\Parser\StepForwardReference.cs" Link="Step21\Parser\StepForwardReference.cs" />
+    <Compile Include="..\Xbim.IO\Step21\Parser\StepP21Entity.cs" Link="Step21\Parser\StepP21Entity.cs" />
+    <Compile Include="..\Xbim.IO\Step21\Parser\StepP21Lex.cs" Link="Step21\Parser\StepP21Lex.cs" />
+    <Compile Include="..\Xbim.IO\Step21\Parser\StepP21Parser.cs" Link="Step21\Parser\StepP21Parser.cs" />
+    <Compile Include="..\Xbim.IO\Step21\Part21Formatter.cs" Link="Step21\Part21Formatter.cs" />
+    <Compile Include="..\Xbim.IO\Step21\Part21Writer.cs" Link="Step21\Part21Writer.cs" />
+    <Compile Include="..\Xbim.IO\Step21\StepDateTimeHelper.cs" Link="Step21\StepDateTimeHelper.cs" />
+    <Compile Include="..\Xbim.IO\Step21\StepDoubleHelper.cs" Link="Step21\StepDoubleHelper.cs" />
+    <Compile Include="..\Xbim.IO\Step21\StepGuidHelper.cs" Link="Step21\StepGuidHelper.cs" />
+    <Compile Include="..\Xbim.IO\Step21\StepTextHelper.cs" Link="Step21\StepTextHelper.cs" />
+    <Compile Include="..\Xbim.IO\Step21\XbimP21Parser.cs" Link="Step21\XbimP21Parser.cs" />
+    <Compile Include="..\Xbim.IO\Step21\XbimP21StringDecoder.cs" Link="Step21\XbimP21StringDecoder.cs" />
+    <Compile Include="..\Xbim.IO\StringExtensions.cs" Link="StringExtensions.cs" />
+    <Compile Include="..\Xbim.IO\TypeExtensions.cs" Link="TypeExtensions.cs" />
+    <Compile Include="..\Xbim.IO\XbimGeometrySort.cs" Link="XbimGeometrySort.cs" />
+    <Compile Include="..\Xbim.IO\Xml\BsConf\cnf.custom.cs" Link="Xml\BsConf\cnf.custom.cs" />
+    <Compile Include="..\Xbim.IO\Xml\BsConf\cnf.designer.cs" Link="Xml\BsConf\cnf.designer.cs" />
+    <Compile Include="..\Xbim.IO\Xml\IfcXmlReader.cs" Link="Xml\IfcXmlReader.cs" />
+    <Compile Include="..\Xbim.IO\Xml\IfcXmlWriter3.cs" Link="Xml\IfcXmlWriter3.cs" />
+    <Compile Include="..\Xbim.IO\Xml\XbimXmlReader4.cs" Link="Xml\XbimXmlReader4.cs" />
+    <Compile Include="..\Xbim.IO\Xml\XbimXmlSettings.cs" Link="Xml\XbimXmlSettings.cs" />
+    <Compile Include="..\Xbim.IO\Xml\XbimXmlWriter4.cs" Link="Xml\XbimXmlWriter4.cs" />
+    <Compile Include="..\Xbim.IO\Xml\XmlMetaProperty.cs" Link="Xml\XmlMetaProperty.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Xml\BsConf\COBieExpress_config.xml" />
+    <Content Include="Xml\BsConf\IFC4_ADD1_config.xml" />
+    <Content Include="Xml\BsConf\IFC4_config.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Binary\" />
+    <Folder Include="Delta\" />
+    <Folder Include="Esent\" />
+    <Folder Include="JSON\" />
+    <Folder Include="Memory\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="ManagedEsent" Version="1.9.4" />
+    <PackageReference Include="SharpZipLib" Version="0.86.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xbim.Common.Standard\Xbim.Common.Standard.csproj" />
+  </ItemGroup>
+
+</Project>
