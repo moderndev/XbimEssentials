@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.ElectricalDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ElectricalDomain.IfcElectricAppliance");
+				var Log = LogManager.GetLogger(Type.GetType("IfcElectricAppliance"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcElectricAppliance.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

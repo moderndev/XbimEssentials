@@ -41,7 +41,7 @@ namespace Xbim.Ifc4.SharedBldgElements
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.SharedBldgElements.IfcBuildingElementProxy");
+				var Log = LogManager.GetLogger(Type.GetType("IfcBuildingElementProxy"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcBuildingElementProxy.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.ArchitectureDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ArchitectureDomain.IfcDoorPanelProperties");
+				var Log = LogManager.GetLogger(Type.GetType("IfcDoorPanelProperties"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcDoorPanelProperties.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

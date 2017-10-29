@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.ProcessExtension
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ProcessExtension.IfcEvent");
+				var Log = LogManager.GetLogger(Type.GetType("IfcEvent"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcEvent.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

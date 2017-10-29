@@ -49,7 +49,7 @@ namespace Xbim.Ifc4.GeometryResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.GeometryResource.IfcAxis2Placement3D");
+				var Log = LogManager.GetLogger(Type.GetType("IfcAxis2Placement3D"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcAxis2Placement3D.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.SharedBldgServiceElements
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.SharedBldgServiceElements.IfcDistributionChamberElement");
+				var Log = LogManager.GetLogger(Type.GetType("IfcDistributionChamberElement"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcDistributionChamberElement.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

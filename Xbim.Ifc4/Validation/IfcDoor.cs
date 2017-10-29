@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.SharedBldgElements
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.SharedBldgElements.IfcDoor");
+				var Log = LogManager.GetLogger(Type.GetType("IfcDoor"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcDoor.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

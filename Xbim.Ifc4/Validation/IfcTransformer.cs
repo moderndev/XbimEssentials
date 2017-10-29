@@ -37,8 +37,8 @@ namespace Xbim.Ifc4.ElectricalDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ElectricalDomain.IfcTransformer");
-				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcTransformer.{0}' for #{1}.", clause,EntityLabel), ex);
+                var Log = LogManager.GetLogger(Type.GetType("IfcTransformer"));
+                Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcTransformer.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;
 		}

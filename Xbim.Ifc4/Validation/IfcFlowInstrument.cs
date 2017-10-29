@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.BuildingControlsDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.BuildingControlsDomain.IfcFlowInstrument");
+				var Log = LogManager.GetLogger(Type.GetType("IfcFlowInstrument"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcFlowInstrument.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

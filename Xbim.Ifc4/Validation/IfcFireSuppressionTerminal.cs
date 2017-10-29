@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.PlumbingFireProtectionDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.PlumbingFireProtectionDomain.IfcFireSuppressionTerminal");
+				var Log = LogManager.GetLogger(Type.GetType("IfcFireSuppressionTerminal"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcFireSuppressionTerminal.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

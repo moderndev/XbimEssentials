@@ -45,7 +45,7 @@ namespace Xbim.Ifc4.ProfileResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ProfileResource.IfcAsymmetricIShapeProfileDef");
+				var Log = LogManager.GetLogger(Type.GetType("IfcAsymmetricIShapeProfileDef"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcAsymmetricIShapeProfileDef.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

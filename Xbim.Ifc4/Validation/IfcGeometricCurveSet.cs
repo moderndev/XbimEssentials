@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.GeometricModelResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.GeometricModelResource.IfcGeometricCurveSet");
+				var Log = LogManager.GetLogger(Type.GetType("IfcGeometricCurveSet"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcGeometricCurveSet.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

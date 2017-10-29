@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.PropertyResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.PropertyResource.IfcPropertyEnumeration");
+				var Log = LogManager.GetLogger(Type.GetType("IfcPropertyEnumeration"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcPropertyEnumeration.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

@@ -45,7 +45,7 @@ namespace Xbim.Ifc4.GeometryResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.GeometryResource.IfcBSplineSurfaceWithKnots");
+				var Log = LogManager.GetLogger(Type.GetType("IfcBSplineSurfaceWithKnots"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcBSplineSurfaceWithKnots.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

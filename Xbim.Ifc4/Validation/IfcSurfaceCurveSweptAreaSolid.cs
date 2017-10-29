@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.GeometricModelResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.GeometricModelResource.IfcSurfaceCurveSweptAreaSolid");
+				var Log = LogManager.GetLogger(Type.GetType("IfcSurfaceCurveSweptAreaSolid"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcSurfaceCurveSweptAreaSolid.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

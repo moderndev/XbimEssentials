@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.ExternalReferenceResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ExternalReferenceResource.IfcExternalReference");
+				var Log = LogManager.GetLogger(Type.GetType("IfcExternalReference"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcExternalReference.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

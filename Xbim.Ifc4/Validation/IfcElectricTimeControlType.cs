@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.ElectricalDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ElectricalDomain.IfcElectricTimeControlType");
+				var Log = LogManager.GetLogger(Type.GetType("IfcElectricTimeControlType"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcElectricTimeControlType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

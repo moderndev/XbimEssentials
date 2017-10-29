@@ -41,7 +41,7 @@ namespace Xbim.Ifc4.ProfileResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ProfileResource.IfcRectangleHollowProfileDef");
+				var Log = LogManager.GetLogger(Type.GetType("IfcRectangleHollowProfileDef"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcRectangleHollowProfileDef.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

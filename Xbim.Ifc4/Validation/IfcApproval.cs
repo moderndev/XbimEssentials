@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.ApprovalResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ApprovalResource.IfcApproval");
+				var Log = LogManager.GetLogger(Type.GetType("IfcApproval"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcApproval.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

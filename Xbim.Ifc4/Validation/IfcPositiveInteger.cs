@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.MeasureResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.MeasureResource.IfcPositiveInteger");
+				var Log = LogManager.GetLogger(Type.GetType("IfcPositiveInteger"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcPositiveInteger.{0}'.", clause), ex);
 			}
 			return retVal;

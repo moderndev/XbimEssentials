@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.SharedComponentElements
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.SharedComponentElements.IfcBuildingElementPartType");
+				var Log = LogManager.GetLogger(Type.GetType("IfcBuildingElementPartType"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcBuildingElementPartType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

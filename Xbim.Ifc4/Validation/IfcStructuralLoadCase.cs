@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.StructuralAnalysisDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.StructuralAnalysisDomain.IfcStructuralLoadCase");
+				var Log = LogManager.GetLogger(Type.GetType("IfcStructuralLoadCase"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcStructuralLoadCase.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

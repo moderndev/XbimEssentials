@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.PresentationAppearanceResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.PresentationAppearanceResource.IfcBlobTexture");
+				var Log = LogManager.GetLogger(Type.GetType("IfcBlobTexture"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcBlobTexture.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

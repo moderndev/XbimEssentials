@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.ProductExtension
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ProductExtension.IfcGeographicElementType");
+				var Log = LogManager.GetLogger(Type.GetType("IfcGeographicElementType"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcGeographicElementType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

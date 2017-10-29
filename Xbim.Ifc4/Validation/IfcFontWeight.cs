@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.PresentationAppearanceResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.PresentationAppearanceResource.IfcFontWeight");
+				var Log = LogManager.GetLogger(Type.GetType("IfcFontWeight"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcFontWeight.{0}'.", clause), ex);
 			}
 			return retVal;

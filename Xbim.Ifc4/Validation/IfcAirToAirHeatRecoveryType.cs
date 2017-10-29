@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.HvacDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.HvacDomain.IfcAirToAirHeatRecoveryType");
+				var Log = LogManager.GetLogger(Type.GetType("IfcAirToAirHeatRecoveryType"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcAirToAirHeatRecoveryType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

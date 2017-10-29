@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.HvacDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.HvacDomain.IfcAirTerminal");
+				var Log = LogManager.GetLogger(Type.GetType("IfcAirTerminal"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcAirTerminal.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;
