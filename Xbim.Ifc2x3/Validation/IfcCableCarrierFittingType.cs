@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.ElectricalDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.ElectricalDomain.IfcCableCarrierFittingType");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.ElectricalDomain.IfcCableCarrierFittingType"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcCableCarrierFittingType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

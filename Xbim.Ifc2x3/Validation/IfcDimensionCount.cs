@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.GeometryResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.GeometryResource.IfcDimensionCount");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.GeometryResource.IfcDimensionCount"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcDimensionCount.{0}'.", clause), ex);
 			}
 			return retVal;

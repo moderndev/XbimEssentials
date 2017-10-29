@@ -41,7 +41,7 @@ namespace Xbim.Ifc2x3.GeometricModelResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.GeometricModelResource.IfcSweptDiskSolid");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.GeometricModelResource.IfcSweptDiskSolid"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcSweptDiskSolid.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

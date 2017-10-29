@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.TopologyResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.TopologyResource.IfcFace");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.TopologyResource.IfcFace"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcFace.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

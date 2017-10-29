@@ -41,7 +41,7 @@ namespace Xbim.Ifc2x3.SharedMgmtElements
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.SharedMgmtElements.IfcRelSchedulesCostItems");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.SharedMgmtElements.IfcRelSchedulesCostItems"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcRelSchedulesCostItems.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

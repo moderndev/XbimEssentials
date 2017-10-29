@@ -45,7 +45,7 @@ namespace Xbim.Ifc2x3.FacilitiesMgmtDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.FacilitiesMgmtDomain.IfcMove");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.FacilitiesMgmtDomain.IfcMove"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcMove.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

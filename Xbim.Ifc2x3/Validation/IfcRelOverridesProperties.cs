@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.Kernel
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.Kernel.IfcRelOverridesProperties");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.Kernel.IfcRelOverridesProperties"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcRelOverridesProperties.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

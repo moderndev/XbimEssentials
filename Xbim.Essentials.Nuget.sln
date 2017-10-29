@@ -72,6 +72,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xbim.Ifc4.Standard", "Xbim.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xbim.Tessellator.Standard", "Xbim.Tessellator.Standard\Xbim.Tessellator.Standard.csproj", "{851DC09B-C650-4260-8B8C-1BFCE80943DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbim.Ifc2x3.Standard", "Xbim.Ifc2x3.Standard\Xbim.Ifc2x3.Standard.csproj", "{16C41AE0-DA9B-4E68-9258-92F46E53BFDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -178,6 +180,10 @@ Global
 		{851DC09B-C650-4260-8B8C-1BFCE80943DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{851DC09B-C650-4260-8B8C-1BFCE80943DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{851DC09B-C650-4260-8B8C-1BFCE80943DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16C41AE0-DA9B-4E68-9258-92F46E53BFDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C41AE0-DA9B-4E68-9258-92F46E53BFDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C41AE0-DA9B-4E68-9258-92F46E53BFDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C41AE0-DA9B-4E68-9258-92F46E53BFDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -201,6 +207,7 @@ Global
 		{B9A4BF67-5B1C-4231-96EA-23A510A46943} = {2CD5B49F-FB73-4B6D-B570-E51B32905A25}
 		{748ADC2C-7F2F-456D-90FE-E15F508475A3} = {2CD5B49F-FB73-4B6D-B570-E51B32905A25}
 		{9E31DAFD-3B27-45BB-AF97-EDCBDBCE65D5} = {3C36CA96-57D2-4FC7-9F34-FDD7A3E83106}
+		{16C41AE0-DA9B-4E68-9258-92F46E53BFDF} = {83A06ECA-AECB-47B1-9A4C-850E6F9E1FEC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FD05123-232D-4DBA-91C7-F0AC575BA6FA}

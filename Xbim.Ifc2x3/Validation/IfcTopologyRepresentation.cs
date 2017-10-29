@@ -45,7 +45,7 @@ namespace Xbim.Ifc2x3.RepresentationResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.RepresentationResource.IfcTopologyRepresentation");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.RepresentationResource.IfcTopologyRepresentation"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcTopologyRepresentation.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

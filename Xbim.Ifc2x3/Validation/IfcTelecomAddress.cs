@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.ActorResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.ActorResource.IfcTelecomAddress");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.ActorResource.IfcTelecomAddress"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcTelecomAddress.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

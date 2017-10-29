@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.PresentationDefinitionResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.PresentationDefinitionResource.IfcTextureMap");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.PresentationDefinitionResource.IfcTextureMap"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcTextureMap.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

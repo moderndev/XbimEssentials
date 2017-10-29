@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.GeometryResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.GeometryResource.IfcCartesianTransformationOperator");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.GeometryResource.IfcCartesianTransformationOperator"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcCartesianTransformationOperator.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

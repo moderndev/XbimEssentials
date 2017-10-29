@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.CostResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.CostResource.IfcEnvironmentalImpactValue");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.CostResource.IfcEnvironmentalImpactValue"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcEnvironmentalImpactValue.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

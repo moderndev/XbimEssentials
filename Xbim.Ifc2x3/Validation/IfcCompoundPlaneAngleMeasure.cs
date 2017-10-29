@@ -49,7 +49,7 @@ namespace Xbim.Ifc2x3.MeasureResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.MeasureResource.IfcCompoundPlaneAngleMeasure");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.MeasureResource.IfcCompoundPlaneAngleMeasure"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcCompoundPlaneAngleMeasure.{0}'.", clause), ex);
 			}
 			return retVal;

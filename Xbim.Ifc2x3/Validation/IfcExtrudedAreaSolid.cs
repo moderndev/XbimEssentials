@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.GeometricModelResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.GeometricModelResource.IfcExtrudedAreaSolid");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.GeometricModelResource.IfcExtrudedAreaSolid"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcExtrudedAreaSolid.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

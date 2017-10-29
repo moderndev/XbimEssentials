@@ -41,7 +41,7 @@ namespace Xbim.Ifc2x3.QuantityResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.QuantityResource.IfcQuantityArea");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.QuantityResource.IfcQuantityArea"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcQuantityArea.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

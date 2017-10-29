@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.Kernel
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.Kernel.IfcProduct");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.Kernel.IfcProduct"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcProduct.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

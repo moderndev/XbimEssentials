@@ -45,7 +45,7 @@ namespace Xbim.Ifc2x3.StructuralAnalysisDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.StructuralAnalysisDomain.IfcStructuralSurfaceMemberVarying");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.StructuralAnalysisDomain.IfcStructuralSurfaceMemberVarying"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcStructuralSurfaceMemberVarying.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

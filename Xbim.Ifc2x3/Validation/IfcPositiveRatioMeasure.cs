@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.MeasureResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.MeasureResource.IfcPositiveRatioMeasure");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.MeasureResource.IfcPositiveRatioMeasure"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcPositiveRatioMeasure.{0}'.", clause), ex);
 			}
 			return retVal;

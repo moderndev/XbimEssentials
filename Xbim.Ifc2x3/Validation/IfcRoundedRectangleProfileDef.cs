@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.ProfileResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.ProfileResource.IfcRoundedRectangleProfileDef");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.ProfileResource.IfcRoundedRectangleProfileDef"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcRoundedRectangleProfileDef.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

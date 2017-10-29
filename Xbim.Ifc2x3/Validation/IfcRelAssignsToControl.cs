@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.Kernel
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.Kernel.IfcRelAssignsToControl");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.Kernel.IfcRelAssignsToControl"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcRelAssignsToControl.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

@@ -41,7 +41,7 @@ namespace Xbim.Ifc2x3.ProfileResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.ProfileResource.IfcUShapeProfileDef");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.ProfileResource.IfcUShapeProfileDef"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcUShapeProfileDef.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

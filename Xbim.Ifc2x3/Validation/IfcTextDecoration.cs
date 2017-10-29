@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.PresentationAppearanceResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.PresentationAppearanceResource.IfcTextDecoration");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.PresentationAppearanceResource.IfcTextDecoration"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcTextDecoration.{0}'.", clause), ex);
 			}
 			return retVal;

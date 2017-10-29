@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.StructuralAnalysisDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.StructuralAnalysisDomain.IfcStructuralPointAction");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.StructuralAnalysisDomain.IfcStructuralPointAction"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcStructuralPointAction.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

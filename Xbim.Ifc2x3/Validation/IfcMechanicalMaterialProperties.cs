@@ -41,7 +41,7 @@ namespace Xbim.Ifc2x3.MaterialPropertyResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.MaterialPropertyResource.IfcMechanicalMaterialProperties");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.MaterialPropertyResource.IfcMechanicalMaterialProperties"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcMechanicalMaterialProperties.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

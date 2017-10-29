@@ -49,7 +49,7 @@ namespace Xbim.Ifc2x3.RepresentationResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.RepresentationResource.IfcShapeRepresentation");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.RepresentationResource.IfcShapeRepresentation"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcShapeRepresentation.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

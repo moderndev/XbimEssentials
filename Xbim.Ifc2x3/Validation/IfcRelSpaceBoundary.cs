@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.ProductExtension
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.ProductExtension.IfcRelSpaceBoundary");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.ProductExtension.IfcRelSpaceBoundary"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcRelSpaceBoundary.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

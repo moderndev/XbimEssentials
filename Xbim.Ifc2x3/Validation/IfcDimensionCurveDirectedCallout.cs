@@ -41,7 +41,7 @@ namespace Xbim.Ifc2x3.PresentationDimensioningResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.PresentationDimensioningResource.IfcDimensionCurveDirectedCallout");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.PresentationDimensioningResource.IfcDimensionCurveDirectedCallout"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcDimensionCurveDirectedCallout.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

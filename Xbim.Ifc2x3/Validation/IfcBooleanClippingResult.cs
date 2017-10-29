@@ -45,7 +45,7 @@ namespace Xbim.Ifc2x3.GeometricModelResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.GeometricModelResource.IfcBooleanClippingResult");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.GeometricModelResource.IfcBooleanClippingResult"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcBooleanClippingResult.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

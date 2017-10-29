@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.MeasureResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.MeasureResource.IfcNamedUnit");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.MeasureResource.IfcNamedUnit"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcNamedUnit.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.SharedBldgElements
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.SharedBldgElements.IfcSlab");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.SharedBldgElements.IfcSlab"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcSlab.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

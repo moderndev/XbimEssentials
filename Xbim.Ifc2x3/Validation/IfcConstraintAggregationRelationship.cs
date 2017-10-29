@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.ConstraintResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.ConstraintResource.IfcConstraintAggregationRelationship");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.ConstraintResource.IfcConstraintAggregationRelationship"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcConstraintAggregationRelationship.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.SharedBldgElements
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.SharedBldgElements.IfcRailing");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.SharedBldgElements.IfcRailing"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcRailing.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

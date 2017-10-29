@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.DateTimeResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.DateTimeResource.IfcLocalTime");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.DateTimeResource.IfcLocalTime"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcLocalTime.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

@@ -45,7 +45,7 @@ namespace Xbim.Ifc2x3.PropertyResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.PropertyResource.IfcPropertyTableValue");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.PropertyResource.IfcPropertyTableValue"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcPropertyTableValue.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

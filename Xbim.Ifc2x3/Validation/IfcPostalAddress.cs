@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.ActorResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.ActorResource.IfcPostalAddress");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.ActorResource.IfcPostalAddress"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcPostalAddress.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

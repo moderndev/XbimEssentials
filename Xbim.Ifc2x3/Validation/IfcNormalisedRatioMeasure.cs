@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.MeasureResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.MeasureResource.IfcNormalisedRatioMeasure");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.MeasureResource.IfcNormalisedRatioMeasure"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcNormalisedRatioMeasure.{0}'.", clause), ex);
 			}
 			return retVal;

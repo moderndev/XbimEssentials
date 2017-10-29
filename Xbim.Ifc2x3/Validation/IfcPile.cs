@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.StructuralElementsDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.StructuralElementsDomain.IfcPile");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.StructuralElementsDomain.IfcPile"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcPile.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

@@ -49,7 +49,7 @@ namespace Xbim.Ifc2x3.PresentationAppearanceResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.PresentationAppearanceResource.IfcPixelTexture");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.PresentationAppearanceResource.IfcPixelTexture"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcPixelTexture.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

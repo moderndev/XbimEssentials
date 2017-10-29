@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.DateTimeResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.DateTimeResource.IfcDaylightSavingHour");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.DateTimeResource.IfcDaylightSavingHour"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcDaylightSavingHour.{0}'.", clause), ex);
 			}
 			return retVal;

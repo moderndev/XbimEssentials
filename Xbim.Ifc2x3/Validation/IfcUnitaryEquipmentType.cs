@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.HVACDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.HVACDomain.IfcUnitaryEquipmentType");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.HVACDomain.IfcUnitaryEquipmentType"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcUnitaryEquipmentType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

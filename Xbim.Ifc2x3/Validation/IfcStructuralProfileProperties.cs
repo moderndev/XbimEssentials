@@ -41,7 +41,7 @@ namespace Xbim.Ifc2x3.ProfilePropertyResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.ProfilePropertyResource.IfcStructuralProfileProperties"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcStructuralProfileProperties.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

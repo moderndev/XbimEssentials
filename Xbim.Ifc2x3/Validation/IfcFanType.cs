@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.HVACDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.HVACDomain.IfcFanType");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.HVACDomain.IfcFanType"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcFanType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

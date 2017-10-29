@@ -37,7 +37,7 @@ namespace Xbim.Ifc2x3.HVACDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.HVACDomain.IfcVibrationIsolatorType");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.HVACDomain.IfcVibrationIsolatorType"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcVibrationIsolatorType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

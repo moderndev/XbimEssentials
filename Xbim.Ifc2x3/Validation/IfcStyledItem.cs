@@ -41,7 +41,7 @@ namespace Xbim.Ifc2x3.PresentationAppearanceResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc2x3.PresentationAppearanceResource.IfcStyledItem");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc2x3.PresentationAppearanceResource.IfcStyledItem"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcStyledItem.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;
