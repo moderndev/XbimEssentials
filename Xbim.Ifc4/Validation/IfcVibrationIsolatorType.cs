@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.HvacDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.HvacDomain.IfcVibrationIsolatorType");
+				var Log = LogManager.GetLogger(Type.GetType("IfcVibrationIsolatorType"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcVibrationIsolatorType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

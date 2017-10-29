@@ -33,8 +33,8 @@ namespace Xbim.Ifc4.ProductExtension
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ProductExtension.IfcZone");
-				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcZone.{0}' for #{1}.", clause,EntityLabel), ex);
+                var Log = LogManager.GetLogger(Type.GetType("IfcZone"));
+                Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcZone.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;
 		}
