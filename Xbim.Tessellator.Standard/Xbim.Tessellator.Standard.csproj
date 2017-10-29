@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Xbim.Tessellator\Dict.cs" Link="Dict.cs" />
+    <Compile Include="..\Xbim.Tessellator\Geom.cs" Link="Geom.cs" />
+    <Compile Include="..\Xbim.Tessellator\Mesh.cs" Link="Mesh.cs" />
+    <Compile Include="..\Xbim.Tessellator\MeshUtils.cs" Link="MeshUtils.cs" />
+    <Compile Include="..\Xbim.Tessellator\PriorityHeap.cs" Link="PriorityHeap.cs" />
+    <Compile Include="..\Xbim.Tessellator\PriorityQueue.cs" Link="PriorityQueue.cs" />
+    <Compile Include="..\Xbim.Tessellator\Sweep.cs" Link="Sweep.cs" />
+    <Compile Include="..\Xbim.Tessellator\Tess.cs" Link="Tess.cs" />
+    <Compile Include="..\Xbim.Tessellator\XbimContourVertexCollection.cs" Link="XbimContourVertexCollection.cs" />
+    <Compile Include="..\Xbim.Tessellator\XbimTessellator.cs" Link="XbimTessellator.cs" />
+    <Compile Include="..\Xbim.Tessellator\XbimTriangulatedMesh.cs" Link="XbimTriangulatedMesh.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xbim.Common.Standard\Xbim.Common.Standard.csproj" />
+    <ProjectReference Include="..\Xbim.Ifc4.Standard\Xbim.Ifc4.Standard.csproj" />
+  </ItemGroup>
+
+</Project>
