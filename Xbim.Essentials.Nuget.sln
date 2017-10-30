@@ -80,6 +80,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbim.Ifc2x3.IO.Standard", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbim.Ifc2x3.Extensions.Standard", "Xbim.Ifc2x3.Extensions.Standard\Xbim.Ifc2x3.Extensions.Standard.csproj", "{8A7562C3-5400-4179-8366-A62F537A0632}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbim.CobieExpress.Standard", "Xbim.CobieExpress.Standard\Xbim.CobieExpress.Standard.csproj", "{B054E653-F87F-4DEA-AAA7-925FB23261ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -202,6 +204,10 @@ Global
 		{8A7562C3-5400-4179-8366-A62F537A0632}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A7562C3-5400-4179-8366-A62F537A0632}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A7562C3-5400-4179-8366-A62F537A0632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B054E653-F87F-4DEA-AAA7-925FB23261ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B054E653-F87F-4DEA-AAA7-925FB23261ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B054E653-F87F-4DEA-AAA7-925FB23261ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B054E653-F87F-4DEA-AAA7-925FB23261ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -228,6 +234,7 @@ Global
 		{F7A5F3B6-EE55-4D3D-B5E1-D3013EF7EC19} = {3C36CA96-57D2-4FC7-9F34-FDD7A3E83106}
 		{CED58DD2-0572-4EC4-B58E-F0B4EF141799} = {83A06ECA-AECB-47B1-9A4C-850E6F9E1FEC}
 		{8A7562C3-5400-4179-8366-A62F537A0632} = {83A06ECA-AECB-47B1-9A4C-850E6F9E1FEC}
+		{B054E653-F87F-4DEA-AAA7-925FB23261ED} = {E9D35CB0-7004-4527-ACA0-8482C7B8AF52}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FD05123-232D-4DBA-91C7-F0AC575BA6FA}
