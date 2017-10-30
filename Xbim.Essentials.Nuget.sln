@@ -84,6 +84,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbim.CobieExpress.Standard"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbim.CobieExpress.IO.Standard", "Xbim.CobieExpress.IO.Standard\Xbim.CobieExpress.IO.Standard.csproj", "{D767B9AE-40D2-43D7-A2C2-341EF7812408}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xbim.IO.TableStore.Standard", "Xbim.IO.TableStore.Standard\Xbim.IO.TableStore.Standard.csproj", "{0785CCE3-BBE8-403D-90A9-400AB2D574D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -214,6 +216,10 @@ Global
 		{D767B9AE-40D2-43D7-A2C2-341EF7812408}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D767B9AE-40D2-43D7-A2C2-341EF7812408}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D767B9AE-40D2-43D7-A2C2-341EF7812408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0785CCE3-BBE8-403D-90A9-400AB2D574D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0785CCE3-BBE8-403D-90A9-400AB2D574D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0785CCE3-BBE8-403D-90A9-400AB2D574D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0785CCE3-BBE8-403D-90A9-400AB2D574D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -242,6 +248,7 @@ Global
 		{8A7562C3-5400-4179-8366-A62F537A0632} = {83A06ECA-AECB-47B1-9A4C-850E6F9E1FEC}
 		{B054E653-F87F-4DEA-AAA7-925FB23261ED} = {E9D35CB0-7004-4527-ACA0-8482C7B8AF52}
 		{D767B9AE-40D2-43D7-A2C2-341EF7812408} = {E9D35CB0-7004-4527-ACA0-8482C7B8AF52}
+		{0785CCE3-BBE8-403D-90A9-400AB2D574D2} = {E9D35CB0-7004-4527-ACA0-8482C7B8AF52}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FD05123-232D-4DBA-91C7-F0AC575BA6FA}
