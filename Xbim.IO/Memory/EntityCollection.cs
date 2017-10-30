@@ -10,7 +10,7 @@ namespace Xbim.IO.Memory
 {
     public class EntityCollection : IEntityCollection, IDisposable
     {
-        private static readonly ILog Log = LogManager.GetLogger(typeof(EntityCollection));
+        private static readonly ILog Log = LogManager.GetLogger(Type.GetType("Xbim.IO.Memory.EntityCollection"));
 
         //simpler hasher as all entities will be in this model so no need to use its hash, small performance gain
         private struct EntityLabelComparer : IEqualityComparer<IPersistEntity>

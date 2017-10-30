@@ -7,7 +7,7 @@ namespace Xbim.IO.Esent
     internal class EsentGeometryStore : IGeometryStore
     {
 
-        private static readonly ILog Log = LogManager.GetLogger(typeof(EsentGeometryStore));
+        private static readonly ILog Log = LogManager.GetLogger(Type.GetType("Xbim.IO.Esent.EsentGeometryStore"));
 
         private readonly EsentModel _esentModel;
 
