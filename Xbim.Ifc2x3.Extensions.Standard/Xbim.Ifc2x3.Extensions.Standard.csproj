@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xbim.Common.Standard\Xbim.Common.Standard.csproj" />
+    <ProjectReference Include="..\Xbim.Ifc2x3.Standard\Xbim.Ifc2x3.Standard.csproj" />
+    <ProjectReference Include="..\Xbim.ifc4.Standard\Xbim.ifc4.Standard.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClassMaker\" />
+    <Folder Include="DataProviders\" />
+  </ItemGroup>
+
+</Project>
