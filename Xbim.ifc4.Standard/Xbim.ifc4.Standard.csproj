@@ -4,6 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Output\Debug\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="..\Xbim.Ifc4\ActorResource\IfcActorRole.cs" Link="ActorResource\IfcActorRole.cs" />
     <Compile Include="..\Xbim.Ifc4\ActorResource\IfcActorRolePartial.cs" Link="ActorResource\IfcActorRolePartial.cs" />

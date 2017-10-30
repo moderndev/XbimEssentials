@@ -4,6 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Output\Debug\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="..\Xbim.Tessellator\Dict.cs" Link="Dict.cs" />
     <Compile Include="..\Xbim.Tessellator\Geom.cs" Link="Geom.cs" />

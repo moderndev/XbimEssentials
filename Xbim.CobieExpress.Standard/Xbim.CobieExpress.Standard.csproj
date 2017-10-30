@@ -4,6 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Output\Debug\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="..\Xbim.CobieExpress\AttributeValue.cs" Link="AttributeValue.cs" />
     <Compile Include="..\Xbim.CobieExpress\BooleanValue.cs" Link="BooleanValue.cs" />

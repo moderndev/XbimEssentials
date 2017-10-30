@@ -4,6 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Output\Debug\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="..\Xbim.IO.TableStore\ClassMapping.cs" Link="ClassMapping.cs" />
     <Compile Include="..\Xbim.IO.TableStore\ClassScope.cs" Link="ClassScope.cs" />
