@@ -5,12 +5,34 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\Xbim.IO.TableStore\ClassMapping.cs" Link="ClassMapping.cs" />
+    <Compile Include="..\Xbim.IO.TableStore\ClassScope.cs" Link="ClassScope.cs" />
+    <Compile Include="..\Xbim.IO.TableStore\DataStatus.cs" Link="DataStatus.cs" />
+    <Compile Include="..\Xbim.IO.TableStore\EntityContext.cs" Link="EntityContext.cs" />
+    <Compile Include="..\Xbim.IO.TableStore\EnumMapping.cs" Link="EnumMapping.cs" />
+    <Compile Include="..\Xbim.IO.TableStore\EnumNameMapping.cs" Link="EnumNameMapping.cs" />
+    <Compile Include="..\Xbim.IO.TableStore\ForwardReference.cs" Link="ForwardReference.cs" />
+    <Compile Include="..\Xbim.IO.TableStore\ModelMapping.cs" Link="ModelMapping.cs" />
+    <Compile Include="..\Xbim.IO.TableStore\PickClassMapping.cs" Link="PickClassMapping.cs" />
+    <Compile Include="..\Xbim.IO.TableStore\PropertyMapping.cs" Link="PropertyMapping.cs" />
+    <Compile Include="..\Xbim.IO.TableStore\ReferenceContext.cs" Link="ReferenceContext.cs" />
+    <Compile Include="..\Xbim.IO.TableStore\Resolvers\ITypeResolver.cs" Link="Resolvers\ITypeResolver.cs" />
+    <Compile Include="..\Xbim.IO.TableStore\StatusRepresentation.cs" Link="StatusRepresentation.cs" />
+    <Compile Include="..\Xbim.IO.TableStore\TableRestore.cs" Link="TableRestore.cs" />
+    <Compile Include="..\Xbim.IO.TableStore\TableStore.cs" Link="TableStore.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="NPOI" Version="2.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Xbim.Common.Standard\Xbim.Common.Standard.csproj" />
     <ProjectReference Include="..\Xbim.IO.Standard\Xbim.IO.Standard.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resolvers\" />
   </ItemGroup>
 
 </Project>
