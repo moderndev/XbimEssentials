@@ -5,7 +5,78 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\Xbim.CobieExpress\AttributeValue.cs" Link="AttributeValue.cs" />
+    <Compile Include="..\Xbim.CobieExpress\BooleanValue.cs" Link="BooleanValue.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieApprovalType.cs" Link="CobieApprovalType.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieAreaUnit.cs" Link="CobieAreaUnit.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieAsset.cs" Link="CobieAsset.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieAssetType.cs" Link="CobieAssetType.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieAttribute.cs" Link="CobieAttribute.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieCategory.cs" Link="CobieCategory.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieClassification.cs" Link="CobieClassification.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieComponent.cs" Link="CobieComponent.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieConnection.cs" Link="CobieConnection.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieConnectionType.cs" Link="CobieConnectionType.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieContact.cs" Link="CobieContact.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieCoordinate.cs" Link="CobieCoordinate.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieCreatedInfo.cs" Link="CobieCreatedInfo.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieCurrencyUnit.cs" Link="CobieCurrencyUnit.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieDocument.cs" Link="CobieDocument.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieDocumentType.cs" Link="CobieDocumentType.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieDurationUnit.cs" Link="CobieDurationUnit.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieExternalObject.cs" Link="CobieExternalObject.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieExternalSystem.cs" Link="CobieExternalSystem.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieFacility.cs" Link="CobieFacility.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieFloor.cs" Link="CobieFloor.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieImpact.cs" Link="CobieImpact.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieImpactStage.cs" Link="CobieImpactStage.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieImpactType.cs" Link="CobieImpactType.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieImpactUnit.cs" Link="CobieImpactUnit.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieIssue.cs" Link="CobieIssue.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieIssueChance.cs" Link="CobieIssueChance.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieIssueImpact.cs" Link="CobieIssueImpact.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieIssueRisk.cs" Link="CobieIssueRisk.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieIssueType.cs" Link="CobieIssueType.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieJob.cs" Link="CobieJob.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieJobStatusType.cs" Link="CobieJobStatusType.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieJobType.cs" Link="CobieJobType.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieLinearUnit.cs" Link="CobieLinearUnit.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobiePhase.cs" Link="CobiePhase.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobiePickValue.cs" Link="CobiePickValue.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieProject.cs" Link="CobieProject.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieReferencedObject.cs" Link="CobieReferencedObject.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieResource.cs" Link="CobieResource.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieResourceType.cs" Link="CobieResourceType.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieRole.cs" Link="CobieRole.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieSite.cs" Link="CobieSite.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieSpace.cs" Link="CobieSpace.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieSpare.cs" Link="CobieSpare.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieSpareType.cs" Link="CobieSpareType.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieStageType.cs" Link="CobieStageType.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieSystem.cs" Link="CobieSystem.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieType.cs" Link="CobieType.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieTypeOrComponent.cs" Link="CobieTypeOrComponent.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieVolumeUnit.cs" Link="CobieVolumeUnit.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CobieZone.cs" Link="CobieZone.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CoordinateTypeEnum.cs" Link="CoordinateTypeEnum.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CustomCode\CobieAttribute.cs" Link="CustomCode\CobieAttribute.cs" />
+    <Compile Include="..\Xbim.CobieExpress\CustomCode\DateTimeValue.cs" Link="CustomCode\DateTimeValue.cs" />
+    <Compile Include="..\Xbim.CobieExpress\DateTimeValue.cs" Link="DateTimeValue.cs" />
+    <Compile Include="..\Xbim.CobieExpress\EntityFactory.cs" Link="EntityFactory.cs" />
+    <Compile Include="..\Xbim.CobieExpress\FloatValue.cs" Link="FloatValue.cs" />
+    <Compile Include="..\Xbim.CobieExpress\IntegerValue.cs" Link="IntegerValue.cs" />
+    <Compile Include="..\Xbim.CobieExpress\ItemSet.cs" Link="ItemSet.cs" />
+    <Compile Include="..\Xbim.CobieExpress\OptionalItemSet.cs" Link="OptionalItemSet.cs" />
+    <Compile Include="..\Xbim.CobieExpress\SpatialDivision.cs" Link="SpatialDivision.cs" />
+    <Compile Include="..\Xbim.CobieExpress\StringValue.cs" Link="StringValue.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Xbim.Common.Standard\Xbim.Common.Standard.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CustomCode\" />
   </ItemGroup>
 
 </Project>
