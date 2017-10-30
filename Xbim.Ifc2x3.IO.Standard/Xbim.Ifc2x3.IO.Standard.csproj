@@ -5,6 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\Xbim.Ifc2x3.IO\IfcProductExtensions.cs" Link="IfcProductExtensions.cs" />
+    <Compile Include="..\Xbim.Ifc2x3.IO\IfcRepresentationItemExtensions.cs" Link="IfcRepresentationItemExtensions.cs" />
+    <Compile Include="..\Xbim.Ifc2x3.IO\IPersistEntityExtensions.cs" Link="IPersistEntityExtensions.cs" />
+    <Compile Include="..\Xbim.Ifc2x3.IO\XbimModel.cs" Link="XbimModel.cs" />
+    <Compile Include="..\Xbim.Ifc2x3.IO\XbimModelSummary.cs" Link="XbimModelSummary.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Xbim.Common.Standard\Xbim.Common.Standard.csproj" />
     <ProjectReference Include="..\Xbim.Ifc.Standard\Xbim.Ifc.Standard.csproj" />
     <ProjectReference Include="..\Xbim.Ifc2x3.Standard\Xbim.Ifc2x3.Standard.csproj" />
