@@ -198,7 +198,7 @@ namespace Xbim.Common.Metadata
         /// </summary>
         /// <param name="ent"></param>
         /// <returns></returns>
-        internal IEnumerable<int> GetIndexedValues(IPersistEntity ent)
+        public IEnumerable<int> GetIndexedValues(IPersistEntity ent)
         {
             if (IndexedProperties == null)
                 return Enumerable.Empty<int>();
@@ -238,7 +238,7 @@ namespace Xbim.Common.Metadata
             get { return _indexedProperties ?? Enumerable.Empty<PropertyInfo>(); }
         }
 
-        internal IList<int> IndexedValues
+        public IList<int> IndexedValues
         {
             get { return _indexedValues; }
         }
