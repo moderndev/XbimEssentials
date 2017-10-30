@@ -18,7 +18,6 @@
     <Compile Include="..\Xbim.Ifc.Extensions\CartesianTransformationOperatorExtensions.cs" Link="CartesianTransformationOperatorExtensions.cs" />
     <Compile Include="..\Xbim.Ifc.Extensions\ClassificationExtensions.cs" Link="ClassificationExtensions.cs" />
     <Compile Include="..\Xbim.Ifc.Extensions\ClassificationNotationSelectExtension.cs" Link="ClassificationNotationSelectExtension.cs" />
-    <Compile Include="..\Xbim.Ifc.Extensions\ClassMaker\CodeGenerator.cs" Link="ClassMaker\CodeGenerator.cs" />
     <Compile Include="..\Xbim.Ifc.Extensions\ClassMaker\IfcEntityAttribute.cs" Link="ClassMaker\IfcEntityAttribute.cs" />
     <Compile Include="..\Xbim.Ifc.Extensions\ConnectedFaceSetExtensions.cs" Link="ConnectedFaceSetExtensions.cs" />
     <Compile Include="..\Xbim.Ifc.Extensions\CoordinatedUniversalTimeOffsetExtensions.cs" Link="CoordinatedUniversalTimeOffsetExtensions.cs" />
