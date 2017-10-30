@@ -8,6 +8,11 @@
     <OutputPath>..\Output\Debug\</OutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>..\Output\Release\Xbim.CobieExpress.Standard.xml</DocumentationFile>
+    <OutputPath>..\Output\Release\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="..\Xbim.CobieExpress\AttributeValue.cs" Link="AttributeValue.cs" />
     <Compile Include="..\Xbim.CobieExpress\BooleanValue.cs" Link="BooleanValue.cs" />

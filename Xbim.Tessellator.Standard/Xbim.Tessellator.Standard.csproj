@@ -8,6 +8,11 @@
     <OutputPath>..\Output\Debug\</OutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>..\Output\Release\Xbim.Tessellator.Standard.xml</DocumentationFile>
+    <OutputPath>..\Output\Release\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="..\Xbim.Tessellator\Dict.cs" Link="Dict.cs" />
     <Compile Include="..\Xbim.Tessellator\Geom.cs" Link="Geom.cs" />

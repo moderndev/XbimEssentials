@@ -8,6 +8,11 @@
     <OutputPath>..\Output\Debug\</OutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\Output\Release\</OutputPath>
+    <DocumentationFile>..\Output\Release\Xbim.Ifc2x3.IO.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="..\Xbim.Ifc2x3.IO\IfcProductExtensions.cs" Link="IfcProductExtensions.cs" />
     <Compile Include="..\Xbim.Ifc2x3.IO\IfcRepresentationItemExtensions.cs" Link="IfcRepresentationItemExtensions.cs" />

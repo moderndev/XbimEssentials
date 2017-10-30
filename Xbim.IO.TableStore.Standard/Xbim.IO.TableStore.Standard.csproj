@@ -8,6 +8,11 @@
     <OutputPath>..\Output\Debug\</OutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>..\Output\Release\Xbim.IO.TableStore.Standard.xml</DocumentationFile>
+    <OutputPath>..\Output\Release\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="..\Xbim.IO.TableStore\ClassMapping.cs" Link="ClassMapping.cs" />
     <Compile Include="..\Xbim.IO.TableStore\ClassScope.cs" Link="ClassScope.cs" />

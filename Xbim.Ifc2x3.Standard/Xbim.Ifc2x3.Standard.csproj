@@ -8,6 +8,11 @@
     <OutputPath>..\Output\Debug\</OutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>..\Output\Release\Xbim.Ifc2x3.Standard.xml</DocumentationFile>
+    <OutputPath>..\Output\Release\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="..\Xbim.Ifc2x3\ActorResource\IfcActorRole.cs" Link="ActorResource\IfcActorRole.cs" />
     <Compile Include="..\Xbim.Ifc2x3\ActorResource\IfcActorRolePartial.cs" Link="ActorResource\IfcActorRolePartial.cs" />

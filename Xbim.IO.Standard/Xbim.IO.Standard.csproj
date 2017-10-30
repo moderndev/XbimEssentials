@@ -8,6 +8,11 @@
     <OutputPath>..\Output\Debug\</OutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>..\Output\Release\Xbim.IO.Standard.xml</DocumentationFile>
+    <OutputPath>..\Output\Release\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="..\Xbim.IO\Binary\XbimInputStream.cs" Link="Binary\XbimInputStream.cs" />
     <Compile Include="..\Xbim.IO\Binary\XbimOutputStream.cs" Link="Binary\XbimOutputStream.cs" />
