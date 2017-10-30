@@ -38,6 +38,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Install.ps1 = Install.ps1
 		Xbim.Cobie.nuspec = Xbim.Cobie.nuspec
 		Xbim.Essentials.nuspec = Xbim.Essentials.nuspec
+		Xbim.Essentials.Standard.nuspec = Xbim.Essentials.Standard.nuspec
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{A54B7B62-7457-48AB-A9C2-16B087A82C36}"
