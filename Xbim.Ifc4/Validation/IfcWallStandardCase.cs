@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.SharedBldgElements
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcWallStandardCase"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.SharedBldgElements.IfcWallStandardCase");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcWallStandardCase.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;
