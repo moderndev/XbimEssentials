@@ -1444,7 +1444,7 @@ namespace Xbim.Ifc
                     }
                     catch (Exception ex)
                     {
-                        var Log = LogManager.GetLogger("Xbim.Ifc.IfcStore");
+                        var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc.IfcStore"));
                         Log.Error(
                             string.Format("Ignored exception on modelreference load for #{0}.", docInfo.EntityLabel),
                             ex);
