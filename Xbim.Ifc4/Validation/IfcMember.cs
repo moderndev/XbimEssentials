@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.SharedBldgElements
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.SharedBldgElements.IfcMember");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.SharedBldgElements.IfcMember"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcMember.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

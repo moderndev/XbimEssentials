@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.PresentationAppearanceResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.PresentationAppearanceResource.IfcFontVariant");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.PresentationAppearanceResource.IfcFontVariant"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcFontVariant.{0}'.", clause), ex);
 			}
 			return retVal;

@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.ConstructionMgmtDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ConstructionMgmtDomain.IfcConstructionMaterialResourceType");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.ConstructionMgmtDomain.IfcConstructionMaterialResourceType"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcConstructionMaterialResourceType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.ConstraintResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ConstraintResource.IfcObjective");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.ConstraintResource.IfcObjective"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcObjective.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

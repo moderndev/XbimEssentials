@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.BuildingControlsDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.BuildingControlsDomain.IfcAlarm");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.BuildingControlsDomain.IfcAlarm"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcAlarm.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

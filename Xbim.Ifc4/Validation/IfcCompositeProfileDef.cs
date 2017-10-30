@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.ProfileResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ProfileResource.IfcCompositeProfileDef");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.ProfileResource.IfcCompositeProfileDef"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcCompositeProfileDef.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

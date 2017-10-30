@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.StructuralLoadResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadConfiguration");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.StructuralLoadResource.IfcStructuralLoadConfiguration"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcStructuralLoadConfiguration.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

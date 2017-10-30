@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.DateTimeResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.DateTimeResource.IfcDayInMonthNumber");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.DateTimeResource.IfcDayInMonthNumber"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcDayInMonthNumber.{0}'.", clause), ex);
 			}
 			return retVal;

@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.PlumbingFireProtectionDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.PlumbingFireProtectionDomain.IfcInterceptor");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.PlumbingFireProtectionDomain.IfcInterceptor"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcInterceptor.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

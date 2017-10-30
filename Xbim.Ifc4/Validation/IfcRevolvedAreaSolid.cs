@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.GeometricModelResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.GeometricModelResource.IfcRevolvedAreaSolid");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.GeometricModelResource.IfcRevolvedAreaSolid"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcRevolvedAreaSolid.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.StructuralElementsDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.StructuralElementsDomain.IfcFootingType");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.StructuralElementsDomain.IfcFootingType"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcFootingType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

@@ -41,7 +41,7 @@ namespace Xbim.Ifc4.StructuralAnalysisDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.StructuralAnalysisDomain.IfcStructuralCurveAction");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.StructuralAnalysisDomain.IfcStructuralCurveAction"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcStructuralCurveAction.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

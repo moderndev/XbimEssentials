@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.Kernel
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.Kernel.IfcTypeProduct");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.Kernel.IfcTypeProduct"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcTypeProduct.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

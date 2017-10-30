@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.ElectricalDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ElectricalDomain.IfcLightFixtureType");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.ElectricalDomain.IfcLightFixtureType"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcLightFixtureType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

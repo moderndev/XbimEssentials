@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.ConstructionMgmtDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.ConstructionMgmtDomain.IfcConstructionProductResource");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.ConstructionMgmtDomain.IfcConstructionProductResource"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcConstructionProductResource.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

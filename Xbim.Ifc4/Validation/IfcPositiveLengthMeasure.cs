@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.MeasureResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.MeasureResource.IfcPositiveLengthMeasure");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.MeasureResource.IfcPositiveLengthMeasure"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcPositiveLengthMeasure.{0}'.", clause), ex);
 			}
 			return retVal;

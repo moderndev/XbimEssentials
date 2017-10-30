@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.UtilityResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger("Xbim.Ifc4.UtilityResource.IfcTable");
+				var Log = LogManager.GetLogger(Type.GetType("Xbim.Ifc4.UtilityResource.IfcTable"));
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcTable.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;
