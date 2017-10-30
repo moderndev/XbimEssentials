@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.GeometricModelResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcFixedReferenceSweptAreaSolid"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.GeometricModelResource.IfcFixedReferenceSweptAreaSolid");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcFixedReferenceSweptAreaSolid.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

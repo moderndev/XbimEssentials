@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.GeometryResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcBoundaryCurve"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.GeometryResource.IfcBoundaryCurve");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcBoundaryCurve.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

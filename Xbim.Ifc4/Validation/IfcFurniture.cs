@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.SharedFacilitiesElements
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcFurniture"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.SharedFacilitiesElements.IfcFurniture");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcFurniture.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

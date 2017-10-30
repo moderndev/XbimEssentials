@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.HvacDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcFilterType"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.HvacDomain.IfcFilterType");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcFilterType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.MaterialResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcMaterialLayer"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.MaterialResource.IfcMaterialLayer");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcMaterialLayer.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

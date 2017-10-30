@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.ProductExtension
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcElementAssembly"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.ProductExtension.IfcElementAssembly");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcElementAssembly.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

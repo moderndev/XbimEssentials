@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.ElectricalDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcSolarDeviceType"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.ElectricalDomain.IfcSolarDeviceType");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcSolarDeviceType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

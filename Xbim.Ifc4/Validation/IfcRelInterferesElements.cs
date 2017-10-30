@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.ProductExtension
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcRelInterferesElements"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.ProductExtension.IfcRelInterferesElements");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcRelInterferesElements.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.ActorResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcAddress"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.ActorResource.IfcAddress");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcAddress.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

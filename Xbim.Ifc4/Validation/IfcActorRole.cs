@@ -33,8 +33,8 @@ namespace Xbim.Ifc4.ActorResource
 						break;
 				}
 			} catch (Exception ex) {
-                var Log = LogManager.GetLogger(Type.GetType("IfcActorRole"));
-                Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcActorRole.{0}' for #{1}.", clause,EntityLabel), ex);
+				var Log = LogManager.GetLogger("Xbim.Ifc4.ActorResource.IfcActorRole");
+				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcActorRole.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;
 		}

@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.SharedBldgElements
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcSlabElementedCase"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.SharedBldgElements.IfcSlabElementedCase");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcSlabElementedCase.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

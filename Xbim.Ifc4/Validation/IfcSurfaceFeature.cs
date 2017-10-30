@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.StructuralElementsDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcSurfaceFeature"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.StructuralElementsDomain.IfcSurfaceFeature");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcSurfaceFeature.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

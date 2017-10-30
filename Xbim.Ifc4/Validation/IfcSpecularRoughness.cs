@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.PresentationAppearanceResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcSpecularRoughness"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.PresentationAppearanceResource.IfcSpecularRoughness");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcSpecularRoughness.{0}'.", clause), ex);
 			}
 			return retVal;

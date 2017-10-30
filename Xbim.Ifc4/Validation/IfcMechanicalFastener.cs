@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.SharedComponentElements
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcMechanicalFastener"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.SharedComponentElements.IfcMechanicalFastener");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcMechanicalFastener.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

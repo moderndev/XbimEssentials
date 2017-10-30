@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.RepresentationResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcGeometricRepresentationContext"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.RepresentationResource.IfcGeometricRepresentationContext");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcGeometricRepresentationContext.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

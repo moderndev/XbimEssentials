@@ -33,8 +33,8 @@ namespace Xbim.Ifc4.BuildingControlsDomain
 						break;
 				}
 			} catch (Exception ex) {
-                var Log = LogManager.GetLogger(Type.GetType("IfcActuatorType"));
-                Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcActuatorType.{0}' for #{1}.", clause,EntityLabel), ex);
+				var Log = LogManager.GetLogger("Xbim.Ifc4.BuildingControlsDomain.IfcActuatorType");
+				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcActuatorType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;
 		}

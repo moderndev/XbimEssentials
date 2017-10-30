@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.SharedBldgElements
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcStair"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.SharedBldgElements.IfcStair");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcStair.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

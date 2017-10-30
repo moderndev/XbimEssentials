@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.HvacDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcCoolingTowerType"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.HvacDomain.IfcCoolingTowerType");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcCoolingTowerType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

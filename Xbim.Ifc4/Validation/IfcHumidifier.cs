@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.HvacDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcHumidifier"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.HvacDomain.IfcHumidifier");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcHumidifier.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

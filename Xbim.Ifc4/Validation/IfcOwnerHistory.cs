@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.UtilityResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcOwnerHistory"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.UtilityResource.IfcOwnerHistory");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcOwnerHistory.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

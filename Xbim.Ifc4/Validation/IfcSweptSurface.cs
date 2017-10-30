@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.GeometryResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcSweptSurface"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.GeometryResource.IfcSweptSurface");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcSweptSurface.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

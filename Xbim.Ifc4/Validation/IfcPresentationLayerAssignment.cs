@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.PresentationOrganizationResource
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcPresentationLayerAssignment"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.PresentationOrganizationResource.IfcPresentationLayerAssignment");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcPresentationLayerAssignment.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

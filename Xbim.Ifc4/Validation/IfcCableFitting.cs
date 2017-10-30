@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.ElectricalDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcCableFitting"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.ElectricalDomain.IfcCableFitting");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcCableFitting.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

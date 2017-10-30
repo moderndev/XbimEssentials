@@ -33,7 +33,7 @@ namespace Xbim.Ifc4.HvacDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcBurnerType"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.HvacDomain.IfcBurnerType");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcBurnerType.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.ProductExtension
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcSpatialZone"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.ProductExtension.IfcSpatialZone");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcSpatialZone.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;

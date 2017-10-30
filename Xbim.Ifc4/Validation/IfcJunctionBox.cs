@@ -37,7 +37,7 @@ namespace Xbim.Ifc4.ElectricalDomain
 						break;
 				}
 			} catch (Exception ex) {
-				var Log = LogManager.GetLogger(Type.GetType("IfcJunctionBox"));
+				var Log = LogManager.GetLogger("Xbim.Ifc4.ElectricalDomain.IfcJunctionBox");
 				Log.Error(string.Format("Exception thrown evaluating where-clause 'IfcJunctionBox.{0}' for #{1}.", clause,EntityLabel), ex);
 			}
 			return retVal;
