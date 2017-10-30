@@ -1871,7 +1871,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Xbim.Common.Standard\Xbim.Common.Standard.csproj" />
-    <ProjectReference Include="..\Xbim.Ifc4.Standard\Xbim.Ifc4.Standard.csproj" />
+    <ProjectReference Include="..\Xbim.ifc4.Standard\Xbim.ifc4.Standard.csproj" />
   </ItemGroup>
 
   <ItemGroup>
