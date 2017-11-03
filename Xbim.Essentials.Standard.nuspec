@@ -24,37 +24,37 @@
     <dependencies>
       <dependency id="log4net" version="2.0.8" />
       <dependency id="ManagedEsent" version="1.9.4" />
-      <dependency id="SharpZipLib" version="0.86.0" />
+      <dependency id="SharpZipLib" version="1.0.0-alpha2" />
     </dependencies>
   </metadata>
   <files>
-    <file src="Output\Release\Xbim.CobieExpress.Standard.dll"    target="lib\netstandard2.0\Xbim.CobieExpress.Standard.dll" />
-    <file src="Output\Release\Xbim.Common.Standard.dll"          target="lib\netstandard2.0\Xbim.Common.Standard.dll" />
-    <file src="Output\Release\Xbim.Ifc.Extensions.Standard.dll"  target="lib\netstandard2.0\Xbim.Ifc.Extensions.Standard.dll" />
-    <file src="Output\Release\Xbim.Ifc2x3.Standard.dll"          target="lib\netstandard2.0\Xbim.Ifc2x3.Standard.dll" />
-    <file src="Output\Release\Xbim.Ifc2x3.IO.Standard.dll"       target="lib\netstandard2.0\Xbim.Ifc2x3.IO.Standard.dll" />
-    <file src="Output\Release\Xbim.Ifc4.Standard.dll"            target="lib\netstandard2.0\Xbim.Ifc4.Standard.dll" />
-    <file src="Output\Release\Xbim.Ifc.Standard.dll"             target="lib\netstandard2.0\Xbim.Ifc.Standard.dll" />
-    <file src="Output\Release\Xbim.IO.Standard.dll"              target="lib\netstandard2.0\Xbim.IO.Standard.dll" />
-    <file src="Output\Release\Xbim.Tessellator.Standard.dll"     target="lib\netstandard2.0\Xbim.Tessellator.Standard.dll" />
-    <file src="Output\Release\Xbim.CobieExpress.Standard.pdb"    target="lib\netstandard2.0\Xbim.CobieExpress.Standard.pdb" />
-    <file src="Output\Release\Xbim.Common.Standard.pdb"          target="lib\netstandard2.0\Xbim.Common.Standard.pdb" />
-    <file src="Output\Release\Xbim.Ifc.Extensions.Standard.pdb"  target="lib\netstandard2.0\Xbim.Ifc.Extensions.Standard.pdb" />
-    <file src="Output\Release\Xbim.Ifc2x3.IO.Standard.pdb"       target="lib\netstandard2.0\Xbim.Ifc2x3.IO.Standard.pdb" />
-    <file src="Output\Release\Xbim.Ifc2x3.Standard.pdb"          target="lib\netstandard2.0\Xbim.Ifc2x3.Standard.pdb" />
-    <file src="Output\Release\Xbim.Ifc4.Standard.pdb"            target="lib\netstandard2.0\Xbim.Ifc4.Standard.pdb" />
-    <file src="Output\Release\Xbim.Ifc.Standard.pdb"             target="lib\netstandard2.0\Xbim.Ifc.Standard.pdb" />
-    <file src="Output\Release\Xbim.IO.Standard.pdb"              target="lib\netstandard2.0\Xbim.IO.Standard.pdb" />
-    <file src="Output\Release\Xbim.Tessellator.Standard.pdb"     target="lib\netstandard2.0\Xbim.Tessellator.Standard.pdb" />
-    <file src="Output\Release\Xbim.CobieExpress.Standard.XML"    target="lib\netstandard2.0\Xbim.CobieExpress.Standard.XML" />
-    <file src="Output\Release\Xbim.Common.Standard.XML"          target="lib\netstandard2.0\Xbim.Common.Standard.XML" />
-    <file src="Output\Release\Xbim.Ifc.Extensions.Standard.XML"  target="lib\netstandard2.0\Xbim.Ifc.Extensions.Standard.XML" />
-    <file src="Output\Release\Xbim.Ifc2x3.IO.Standard.XML"       target="lib\netstandard2.0\Xbim.Ifc2x3.IO.Standard.XML" />
-    <file src="Output\Release\Xbim.Ifc2x3.Standard.XML"          target="lib\netstandard2.0\Xbim.Ifc2x3.Standard.XML" />
-    <file src="Output\Release\Xbim.Ifc4.Standard.XML"            target="lib\netstandard2.0\Xbim.Ifc4.Standard.XML" />
-    <file src="Output\Release\Xbim.Ifc.Standard.XML"            	target="lib\netstandard2.0\Xbim.Ifc.Standard.XML" />
-    <file src="Output\Release\Xbim.IO.Standard.XML"              target="lib\netstandard2.0\Xbim.IO.Standard.XML" />
-    <file src="Output\Release\Xbim.Tessellator.Standard.XML"     target="lib\netstandard2.0\Xbim.Tessellator.Standard.XML" />
+    <file src="Output\Release\netstandard2.0\Xbim.CobieExpress.Standard.dll"    target="lib\netstandard2.0\Xbim.CobieExpress.Standard.dll" />
+    <file src="Output\Release\netstandard2.0\Xbim.Common.Standard.dll"          target="lib\netstandard2.0\Xbim.Common.Standard.dll" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc.Extensions.Standard.dll"  target="lib\netstandard2.0\Xbim.Ifc.Extensions.Standard.dll" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc2x3.Standard.dll"          target="lib\netstandard2.0\Xbim.Ifc2x3.Standard.dll" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc2x3.IO.Standard.dll"       target="lib\netstandard2.0\Xbim.Ifc2x3.IO.Standard.dll" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc4.Standard.dll"            target="lib\netstandard2.0\Xbim.Ifc4.Standard.dll" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc.Standard.dll"             target="lib\netstandard2.0\Xbim.Ifc.Standard.dll" />
+    <file src="Output\Release\netstandard2.0\Xbim.IO.Standard.dll"              target="lib\netstandard2.0\Xbim.IO.Standard.dll" />
+    <file src="Output\Release\netstandard2.0\Xbim.Tessellator.Standard.dll"     target="lib\netstandard2.0\Xbim.Tessellator.Standard.dll" />
+    <file src="Output\Release\netstandard2.0\Xbim.CobieExpress.Standard.pdb"    target="lib\netstandard2.0\Xbim.CobieExpress.Standard.pdb" />
+    <file src="Output\Release\netstandard2.0\Xbim.Common.Standard.pdb"          target="lib\netstandard2.0\Xbim.Common.Standard.pdb" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc.Extensions.Standard.pdb"  target="lib\netstandard2.0\Xbim.Ifc.Extensions.Standard.pdb" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc2x3.IO.Standard.pdb"       target="lib\netstandard2.0\Xbim.Ifc2x3.IO.Standard.pdb" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc2x3.Standard.pdb"          target="lib\netstandard2.0\Xbim.Ifc2x3.Standard.pdb" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc4.Standard.pdb"            target="lib\netstandard2.0\Xbim.Ifc4.Standard.pdb" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc.Standard.pdb"             target="lib\netstandard2.0\Xbim.Ifc.Standard.pdb" />
+    <file src="Output\Release\netstandard2.0\Xbim.IO.Standard.pdb"              target="lib\netstandard2.0\Xbim.IO.Standard.pdb" />
+    <file src="Output\Release\netstandard2.0\Xbim.Tessellator.Standard.pdb"     target="lib\netstandard2.0\Xbim.Tessellator.Standard.pdb" />
+    <file src="Output\Release\netstandard2.0\Xbim.CobieExpress.Standard.XML"    target="lib\netstandard2.0\Xbim.CobieExpress.Standard.XML" />
+    <file src="Output\Release\netstandard2.0\Xbim.Common.Standard.XML"          target="lib\netstandard2.0\Xbim.Common.Standard.XML" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc.Extensions.Standard.XML"  target="lib\netstandard2.0\Xbim.Ifc.Extensions.Standard.XML" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc2x3.IO.Standard.XML"       target="lib\netstandard2.0\Xbim.Ifc2x3.IO.Standard.XML" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc2x3.Standard.XML"          target="lib\netstandard2.0\Xbim.Ifc2x3.Standard.XML" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc4.Standard.XML"            target="lib\netstandard2.0\Xbim.Ifc4.Standard.XML" />
+    <file src="Output\Release\netstandard2.0\Xbim.Ifc.Standard.XML"            	target="lib\netstandard2.0\Xbim.Ifc.Standard.XML" />
+    <file src="Output\Release\netstandard2.0\Xbim.IO.Standard.XML"              target="lib\netstandard2.0\Xbim.IO.Standard.XML" />
+    <file src="Output\Release\netstandard2.0\Xbim.Tessellator.Standard.XML"     target="lib\netstandard2.0\Xbim.Tessellator.Standard.XML" />
     <file src="Install.ps1"                             target="tools\Install.ps1" />
   </files>
 </package>

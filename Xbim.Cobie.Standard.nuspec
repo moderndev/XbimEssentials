@@ -24,12 +24,12 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="Output\Release\Xbim.CobieExpress.IO.Standard.dll" target="lib\netstandard2.0\Xbim.CobieExpress.IO.Standard.dll" />
-    <file src="Output\Release\Xbim.IO.TableStore.Standard.dll"   target="lib\netstandard2.0\Xbim.IO.TableStore.Standard.dll" />
-    <file src="Output\Release\Xbim.CobieExpress.IO.Standard.pdb" target="lib\netstandard2.0\Xbim.CobieExpress.IO.Standard.pdb" />
-    <file src="Output\Release\Xbim.IO.TableStore.Standard.pdb"   target="lib\netstandard2.0\Xbim.IO.TableStore.Standard.pdb" />
-    <file src="Output\Release\Xbim.CobieExpress.IO.Standard.XML" target="lib\netstandard2.0\Xbim.CobieExpress.IO.Standard.XML" />
-    <file src="Output\Release\Xbim.IO.TableStore.Standard.XML"   target="lib\netstandard2.0\Xbim.IO.TableStore.Standard.XML" />
+    <file src="Output\Release\netstandard2.0\Xbim.CobieExpress.IO.Standard.dll" target="lib\netstandard2.0\Xbim.CobieExpress.IO.Standard.dll" />
+    <file src="Output\Release\netstandard2.0\Xbim.IO.TableStore.Standard.dll"   target="lib\netstandard2.0\Xbim.IO.TableStore.Standard.dll" />
+    <file src="Output\Release\netstandard2.0\Xbim.CobieExpress.IO.Standard.pdb" target="lib\netstandard2.0\Xbim.CobieExpress.IO.Standard.pdb" />
+    <file src="Output\Release\netstandard2.0\Xbim.IO.TableStore.Standard.pdb"   target="lib\netstandard2.0\Xbim.IO.TableStore.Standard.pdb" />
+    <file src="Output\Release\netstandard2.0\Xbim.CobieExpress.IO.Standard.XML" target="lib\netstandard2.0\Xbim.CobieExpress.IO.Standard.XML" />
+    <file src="Output\Release\netstandard2.0\Xbim.IO.TableStore.Standard.XML"   target="lib\netstandard2.0\Xbim.IO.TableStore.Standard.XML" />
 	  <file src="Install.ps1"                             target="tools\Install.ps1" />
   </files>
 </package>
