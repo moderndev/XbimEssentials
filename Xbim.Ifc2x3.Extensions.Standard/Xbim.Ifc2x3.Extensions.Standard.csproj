@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Xbim.Ifc.Extensions.Standard</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -9,7 +10,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>..\Output\Release\Xbim.Ifc2x3.Extensions.Standard.xml</DocumentationFile>
+    <DocumentationFile>..\Output\Release\Xbim.Ifc.Extensions.Standard.xml</DocumentationFile>
     <OutputPath>..\Output\Release\</OutputPath>
   </PropertyGroup>
 
