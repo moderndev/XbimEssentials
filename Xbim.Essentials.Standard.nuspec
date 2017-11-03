@@ -11,12 +11,13 @@
     <iconUrl>https://avatars1.githubusercontent.com/u/2284875?v=3&amp;s=240</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>
-        IMPORTANT: This is a .NETStandard 2.0 version for testing
-        xBIM Essentials 4 provides support for Ifc2x2, Ifc2x3 and Ifc4 Addendum 1.
-        This release provides IfcStore, a single point for opening any Ifc file, including XML, STEP21 and IFCZIP formats.
-        All programmatic access to Ifc Entities is through a single interface, allowing one code base to work with all Ifc formats.
-        Ifc4 is the default interface future proofing your development work.
-        This release replaces Xbim Essentials 3 but minor code reafactoring will be required, XbimModel is deprecated in favour of IfcStore.
+    IMPORTANT: This is a .NETStandard 2.0 version for testing
+    
+    xBIM Essentials 4 provides support for Ifc2x2, Ifc2x3 and Ifc4 Addendum 1.
+    This release provides IfcStore, a single point for opening any Ifc file, including XML, STEP21 and IFCZIP formats.
+    All programmatic access to Ifc Entities is through a single interface, allowing one code base to work with all Ifc formats.
+    Ifc4 is the default interface future proofing your development work.
+    This release replaces Xbim Essentials 3 but minor code reafactoring will be required, XbimModel is deprecated in favour of IfcStore.
     </description>
     <summary>The .Net toolkit for developing BIM applications based on the IFC standards. Essential support for the IFC2x3 and IFC4 data models</summary>
     <releaseNotes>Support for IFC4</releaseNotes>

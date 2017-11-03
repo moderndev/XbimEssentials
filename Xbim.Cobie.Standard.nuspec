@@ -11,9 +11,10 @@
     <iconUrl>https://avatars1.githubusercontent.com/u/2284875?v=3&amp;s=240</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>
-        IMPORTANT: This is a .NETStandard 2.0 version for testing
-        xBIM Cobie provides an object model for handling the Cobie schema used in both the UK and US implementations.
-        It supports easy transformation from Ifc to Cobie and exports to Spreadsheet, JSOn and XML formats.
+    IMPORTANT: This is a .NETStandard 2.0 version for testing
+    
+    xBIM Cobie provides an object model for handling the Cobie schema used in both the UK and US implementations.
+    It supports easy transformation from Ifc to Cobie and exports to Spreadsheet, JSOn and XML formats.
     </description>
     <summary>The .Net toolkit for developing BIM applications based on the IFC standards. Essential support for Cobie 2 and 3</summary>
     <releaseNotes>Support for tabular data</releaseNotes>
